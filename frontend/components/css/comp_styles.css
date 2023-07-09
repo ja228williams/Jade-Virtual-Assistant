@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('./fonts/Orbitron-VariableFont_wght.ttf')  /* Adjust the path and file format as per your font files */
+         /* url('../fonts/orbitron.woff') format('woff'); */
+    /* Include additional font formats if available */
+    /* Specify the path and file format for each font file */
+}
+
+* {
+    color: white;
+    font-family: 'Orbitron';
+}
+
+body {
+    background-color: rgb(39, 21, 93);
+}
+
+#header {
+    text-align: center;
+    font-size: 50px;
+    color: fuchsia;
+}
+
+#speechtotext {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 200px;
+    height: 15%; 
+    background-color: black;
+    font-size: 20px;
+}
+
+#speechtotext.enabled {
+    background-color: green;
+}
+
+#speechtotext.disabled {
+    background-color: red;
+}
+
+#chat {
+    /* background-color: rgb(32, 46, 46); */
+    width: 800px;
+    height: 800px;
+    border-radius: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-history {
+    background-color: black;
+    padding: 10px;
+
+    border-style: solid;
+    border-radius: 10% 10% 0% 0%;
+    border-color: #1b1c1e;
+    border-width: 50px 70px 0px 70px;
+
+    overflow: auto;
+    width: 80%;
+    flex-grow: 1;
+    margin: 10px auto 0;
+}
+
+#input-msg {
+    background-color: rgb(47, 79, 79);
+    width: 99.3%;
+    /* height: auto; */
+    min-height: 80px;
+    resize: none;
+    font-size: 15px;
+}
+  
+.prev-msg {
+    text-shadow: 1.3px 1.3px;
+}
+
+#sender-user {
+    color: aquamarine;
+    text-align: right;
+}
+
+#sender-jade {
+    color: fuchsia;
+}
